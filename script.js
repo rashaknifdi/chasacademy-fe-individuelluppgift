@@ -8,11 +8,10 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     });
 
-    const newsletterButton = document.querySelector(".newsletter .primary-button");
-    if (newsletterButton) {
-        newsletterButton.addEventListener("submit", function (e) {
-            e.preventDefault();
-            alert("Thank you for subscribing!");
-        });
+    const form = document.querySelector(".newsletter form");
+    if (form) { form.addEventListener("submit", function (e)
+    { e.preventDefault();
+        alert("Thank you for subscribing!");
+    });
     }
 });
