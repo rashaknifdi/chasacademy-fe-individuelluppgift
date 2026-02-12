@@ -1,7 +1,4 @@
-(function simulateHeavyWork() {
-    const start = Date.now();
-    while (Date.now() - start < 200) {}
-})();
+
 
 document.addEventListener("DOMContentLoaded", function () {
     const items = document.querySelectorAll(".add-to-cart");
@@ -13,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const newsletterButton = document.querySelector(".newsletter .primary-button");
     if (newsletterButton) {
-        newsletterButton.addEventListener("click", function (e) {
+        newsletterButton.addEventListener("submit", function (e) {
             e.preventDefault();
             alert("Thank you for subscribing!");
         });
