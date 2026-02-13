@@ -8,7 +8,7 @@
     <script src="script.js"></script>
 </head>
 <body>
-
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <header class="top-bar">
         <div class="logo">MyShop</div>
         <nav class="menu" aria-label="Main navigation">
@@ -17,21 +17,21 @@
             <div class="menu-item"><a href="#">Contact</a></div>
         </nav>
     </header>
-    <main>
-    <section class="hero">
+    <main id="main-content">
+    <section class="hero" aria-labelledby="hero-heading">
         <img src="images/pexels-photo-373912.jpeg"
              alt="Hero image"
              class="hero-image">
         <div class="hero-text">
-            <h1>Welcome to MyShop</h1>
+            <h1 id="hero-heading">Welcome to MyShop</h1>
             <p>Find the best products at the lowest prices.</p>
             <button class="primary-button">Shop now</button>
         </div>
     </section>
 
-    <section class="content">
+    <section class="content" aria-labelledby="products-heading">
         <div class="section-title">
-            <h2>Our Products</h2>
+            <h2 id="products-heading">Our Products</h2>
         </div>
 
         <div class="products">
@@ -73,8 +73,8 @@
         </div>
     </section>
 
-    <section class="newsletter">
-        <h2>Subscribe to our newsletter</h2>
+    <section class="newsletter" aria-labelledby="subscribe-heading">
+        <h2 id="subscribe-heading">Subscribe to our newsletter</h2>
         <p>Get the latest updates and offers.</p>
         <form>
             <label for="name">Name</label>
