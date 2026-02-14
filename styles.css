@@ -26,9 +26,12 @@ body {
     color: #999999;
 }
 
-.menu {
-    display: flex;
-    gap: 16px;
+.menu ul {
+    list-style: none; /* tar bort punkter */
+    display: flex; /* gör dem horisontella */
+    gap: 16px; /* samma spacing som innan */
+    margin: 0;
+    padding: 0;
 }
 
 .menu-item a {
@@ -36,6 +39,7 @@ body {
     color: #888888;
     font-size: 14px;
 }
+
 
 .hero {
     position: relative;
