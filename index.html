@@ -8,7 +8,6 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
     <header class="top-bar">
         <div class="logo">MyShop</div>
         <nav class="menu" aria-label="Main navigation">
@@ -51,7 +50,7 @@
                 <img src="images/pexels-photo-1334597.jpeg"
                      alt="“Tablet home screen with app icons."
                      class="product-image">
-                <h3>Smart Watch</h3>
+                <h3> SmartWatch</h3>
                 <p class="product-description">
                     Track your activity and stay connected. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                 </p>
@@ -78,9 +77,19 @@
         <p>Get the latest updates and offers.</p>
         <form>
             <label for="name">Name</label>
-            <input id="name" type="text" name="name" placeholder="Your name">
+            <input id="name" type="text"
+                   name="name"
+                   placeholder="Your name"
+                   autocomplete="name"
+                   required
+                   aria-required="true">
             <label for="email">Email</label>
-            <input id="email" type="email" name="email" placeholder="Your email">
+            <input id="email" type="email"
+                   name="email"
+                   placeholder="Your email"
+                   autocomplete="email"
+                   required
+                   aria-required="true">
             <button type="submit" class="primary-button">Subscribe</button>
         </form>
     </section>
