@@ -157,3 +157,7 @@ body {
     text-decoration: none;
     margin-left: 8px;
 }
+:focus-visible {
+    outline: 3px solid #ffeb3b;
+    outline-offset: 3px;
+}
