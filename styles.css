@@ -39,6 +39,11 @@ body {
     font-size: 14px;
 }
 
+.logo {
+    color: #1f2933;
+    font-size: 24px;
+    font-weight: bold;
+}
 
 .hero {
     position: relative;
