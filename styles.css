@@ -165,3 +165,16 @@ body {
     outline: 3px solid #ffeb3b;
     outline-offset: 3px;
 }
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #000;
+    color: #fff;
+    padding: 8px 16px;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
+}
