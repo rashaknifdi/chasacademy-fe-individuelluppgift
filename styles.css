@@ -19,16 +19,10 @@ body {
     border-bottom: 1px solid #e0e0e0;
 }
 
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #999999;
-}
-
 .menu ul {
-    list-style: none; /* tar bort punkter */
-    display: flex; /* gör dem horisontella */
-    gap: 16px; /* samma spacing som innan */
+    list-style: none;
+    display: flex;
+    gap: 16px;
     margin: 0;
     padding: 0;
 }
