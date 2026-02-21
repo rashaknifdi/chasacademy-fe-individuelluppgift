@@ -40,3 +40,26 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 });
+
+document.addEventListener("DOMContentLoaded", () => {
+    const lcpDisplay = document.getElementById("lcp-display");
+
+    console.log("Hittar lcp-display:", lcpDisplay);
+
+    if ("PerformanceObserver" in window) {
+        const observer = new PerformanceObserver((entryList) => {
+            const entries = entryList.getEntries();
+            const lastEntry = entries[entries.length - 1];
+            const lcp = lastEntry.renderTime || lastEntry.loadTime;
+
+            if (lcpDisplay) {
+                lcpDisplay.textContent = `LCP: ${Math.round(lcp)} ms`;
+            }
+
+            console.log("LCP:", Math.round(lcp), "ms");
+        });
+
+        observer.observe({ type: "largest-contentful-paint", buffered: true });
+    }
+});
+
