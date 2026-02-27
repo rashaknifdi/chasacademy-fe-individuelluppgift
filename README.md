@@ -1,4 +1,5 @@
 # Individuell inlämningsuppgift – Tillgänglighet & LCP
+
 **Kurs:** Frontend & Tillgänglighet  
 **Student:** Rasha Knifdi  
 **Datum:** 1 mars 2026
@@ -113,7 +114,8 @@ LCP mättes med en `PerformanceObserver` och visades både i konsolen och på si
 - Sidan känns snabbare och mer responsiv
 
 ---
-
+## 📝 Sammanfattning
+Uppgiften har gett mig en tydlig och praktisk förståelse för hur tillgänglighet och prestanda påverkar en webbsidas kvalitet. Genom att arbeta iterativt, mäta förändringar och dokumentera varje steg har jag kunnat förbättra både användbarhet och LCP‑prestanda på ett konkret sätt. Arbetet har stärkt min förmåga att identifiera problem, motivera tekniska val och arbeta metodiskt med WCAG‑anpassningar, optimeringar och testning.
 
 
 
